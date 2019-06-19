@@ -42,28 +42,26 @@
 //  37. Top Bar
 @import 'util/util';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 // 1. Global
 // ---------
 
 $global-font-size: 112.5%;
-$global-width: rem-calc(1920);
+$global-width: rem-calc(1440);
 $global-lineheight: 1.5;
 $foundation-palette: ( primary: #1779ba, secondary: #767676, success: #3adb76, warning: #ffae00, alert: #cc4b37, );
 $black: #000000;
 $white: #ffffff;
 $light-gray: #eeeeee;
-$gray: #969895;
+$gray: #6e7078;
 $dark-gray: #444444;
-$light-blue: #E1ECF1;
-$dark-blue: #033F67;
-$blue: #B0D2DF;
-$peach: #e46e17;
-$red: #F40C21;
-$green: #c5d440;
-$cyan: #157CB0;
+$light-blue: #8AB8E0;
+$blue: #27357C;
+$dark-blue: #0D164C;
+$green: #4AA441;
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Open Sans', sans-serif;
+$body-font-color: $dark-blue;
+$body-font-family: 'Roboto', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -98,28 +96,23 @@ $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: $black;
+$header-color: $dark-blue;
 $header-lineheight: 1.25;
 $header-margin-bottom: 1rem;
 $header-styles: (
   small: (
-  'h1': ('font-size': 30),
-  'h2': ('font-size': 30),
+
+  'h2': ('font-size': 22),
   'h3': ('font-size': 22),
   'h4': ('font-size': 20), ),
 
   large: (
-  'h1': ('font-size': 30),
-  'h2': ('font-size': 40),
+  'h2': ('font-size': 30),
   'h3': ('font-size': 22),
   'h4': ('font-size': 23), ),
 
-  xlarge: (
-  'h1': ('font-size': 40), ),
-
   xxlarge: (
-  'h1': ('font-size': 50),
-  'h2': ('font-size': 50),
+  'h2': ('font-size': 40),
   'h3': ('font-size': 22),
   'h4': ('font-size': 27), ), );
 
@@ -130,7 +123,7 @@ $paragraph-lineheight: 1.5;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $paragraph-font-size: rem-calc(24);
-$paragraph-color: $black;
+$paragraph-color: $dark-blue;
 $code-color: $black;
 $code-font-family: $font-family-monospace;
 $code-font-weight: $global-weight-normal;

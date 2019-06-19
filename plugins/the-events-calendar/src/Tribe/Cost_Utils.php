@@ -103,7 +103,7 @@ class Tribe__Events__Cost_Utils extends Tribe__Cost_Utils {
 			/**
 			 * Filter the cost value prior to applying formatting
 			 *
-			 * @since 4.9.2
+			 * @since TBD
 			 *
 			 * @param double $cost the event cost
 			 * @param int    $event_id  The ID of the event

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class Tribe__Service_Providers__Promoter_Connector
+ * Class Tribe__Service_Providers__Processes
  *
  * @since 4.9
  *

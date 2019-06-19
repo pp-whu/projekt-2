@@ -184,7 +184,7 @@ class Tribe__Context {
 	/**
 	 * Tribe__Context constructor.
 	 *
-	 * @since 4.9.8
+	 * @since TBD
 	 */
 	public function __construct(  ) {
 		$this->add_dynamic_locations();
@@ -1227,7 +1227,7 @@ class Tribe__Context {
 	 *
 	 * Using a flag locations are added only once per request.
 	 *
-	 * @since 4.9.8
+	 * @since TBD
 	 */
 	protected function add_dynamic_locations() {
 		if ( static::$did_set_dynamic_locations ) {
@@ -1255,7 +1255,7 @@ class Tribe__Context {
 		/**
 		 * Filters the locations registered in the Context.
 		 *
-		 * @since 4.9.8
+		 * @since TBD
 		 *
 		 * @param  array  $locations  An array of locations registered on the Context object.
 		 */
@@ -1265,23 +1265,30 @@ class Tribe__Context {
 	}
 
 	/**
-	 * Reads (gets) the value applying one or more filters.
+	 * Reads the value as the result of the application of one or more filters to a default value.
 	 *
-	 * @since 4.9.8
+	 * The filters will be applied with the same logic as the other locations: top to bottom and only until
+	 * one returns a value that is not the default value. This means that if more than one filter is specified
+	 * and the first filter returns a value that is not the same as the default value then that first filter
+	 * resulting value will be returned.
 	 *
-	 * @param array $filters The list of filters to apply, in order.
-	 * @param mixed $default The default value to return.
+	 * @since TBD
 	 *
-	 * @return mixed The first valid value found or the default value.
+	 * @param  array  $filters A list of filters that will be applied to the the default value top to bottom.
+	 * @param mixed $default The default value that will be filtered.
+	 *
+	 * @return mixed The filtered value.
 	 */
-	public function filter( array $filters, $default ) {
-		foreach ( $filters as $filter ) {
-			$the_value = apply_filters( $filter, $default );
-			if ( $the_value !== $default ) {
-				return $the_value;
+	protected function filter( array $filters, $default ) {
+		$value = $default;
+
+		foreach ( $filters as $tag ) {
+			$value = apply_filters( $tag, $default );
+			if ( $default !== $value ) {
+				return $value;
 			}
 		}
 
-		return $default;
+		return $value;
 	}
 }

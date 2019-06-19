@@ -3,7 +3,7 @@
  * The main Views index template file.
  *
  * @package Tribe\Events\Views\V2
- * @since   4.9.2
+ * @since   TBD
  */
 
 namespace Tribe\Events\Views\V2;
@@ -12,7 +12,7 @@ namespace Tribe\Events\Views\V2;
  * Class Index
  *
  * @package Tribe\Events\Views\V2
- * @since   4.9.2
+ * @since   TBD
  */
 class Index extends Template {
 

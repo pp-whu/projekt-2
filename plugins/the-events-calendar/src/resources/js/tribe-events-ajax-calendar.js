@@ -375,10 +375,7 @@
 					return;
 				}
 
-				if (
-					typeof $tribedate.val() !== 'undefined'
-					&& $tribedate.val().length
-				) {
+				if ( $tribedate.length ) {
 					if ( '0' !== ts.datepicker_format ) {
 						ts.date = tribeDateFormat( $tribedate.bootstrapDatepicker( 'getDate' ), 'tribeMonthQuery' );
 					}

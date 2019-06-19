@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Class Tribe__Promoter__View
+ * Class Tribe__Tickets__Attendee_Info__View
  */
 class Tribe__Promoter__View extends Tribe__Template {
 
 	/**
-	 * Tribe__Promoter__View constructor.
+	 * Tribe__Tickets__Attendee_Info__View constructor.
 	 *
 	 * @since 4.9
 	 */

@@ -78,11 +78,6 @@ function ww_setup_theme_supported_features() {
             'slug' => 'very-dark-gray',
             'color' => '#444',
         ),
-				array(
-						'name' => __( 'green', 'themeLangDomain' ),
-						'slug' => 'green',
-						'color' => '#C5D440',
-				),
     ) );
 
 		add_theme_support( 'disable-custom-colors' );
